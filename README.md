@@ -29,10 +29,15 @@ analyze the performance of the overall solution.
 
 The Testing process consisted of the following steps:
 1-Initialization: An input graph was generated with its corresponding edge connections.
+
 2-Traditional Approach: The input graph was solved using the Welsh Powell algorithm, a traditional graph coloring method. The resulting coloring was saved in the test labels, which were later used for visualization.
+
 3-Graph Conversion: The input graph was passed through a conversion function to represent it as an adjacency matrix. Additionally, the degrees of the nodes were calculated. Both the adjacency matrix and node degrees were returned as output.
+
 4-Model Initialization: An instance of the trained model was created. The saved parameters from the previously trained model were loaded into the instance.
+
 5-Predictions: The trained model was used to make predictions on the input graph. This process involved feeding the adjacency matrix and node degrees into the model, which then generated predicted colors for the graph nodes.
+
 6-Visualization: The input graph, the graph colored using the Welsh Powell algorithm, and the graph colored using the predictions from the model were plotted. These visualizations provided a comparison between the traditional approach and the model's predictions.
 
 By following this experimental procedure, the input graph was transformed, analyzed using both traditional and machine learning approaches, and visualized to assess the performance and effectiveness of the trained model in graph coloring.
